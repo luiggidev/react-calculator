@@ -150,7 +150,27 @@ const App = () => {
               <Button
                 key={i}
                 // Notice exception for the "=" operator to be a "equals" string
-                className={btn === "=" ? "equals" : ""}
+                className={
+                    btn === "C" 
+                  ? "reset"
+                  : btn === "+-" 
+                  ? "plusminus"
+                  : btn === "%" 
+                  ? "percent"
+                  : btn === "/" 
+                  ? "divide"
+                  : btn === "X" 
+                  ? "multiply"
+                  : btn === "-" 
+                  ? "minus"
+                  : btn === "+" 
+                  ? "plus"
+                  : btn === "=" 
+                  ? "equals" 
+                  : btn === "." 
+                  ? "decimal"
+                  : "" 
+                }
                 value={btn}
                 onClick={
                     btn === "C"

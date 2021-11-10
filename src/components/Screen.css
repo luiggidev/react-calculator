@@ -1,14 +1,14 @@
 .screen {
     height: 100px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 0 10px;
-    background-color: rgb(41, 39, 48);
+    background-color: #98a194;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: white;
+    color: black;
     font-weight: bold;
     box-sizing: border-box;
 }
