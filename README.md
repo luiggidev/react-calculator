@@ -15,6 +15,7 @@ Calculate percentages, invert, reset.
 Textfit used to format larger numbers.
 
 Tutorial followed:
+
 https://www.sitepoint.com/react-tutorial-build-calculator-app/
 
 - Added support for symbol classes.
