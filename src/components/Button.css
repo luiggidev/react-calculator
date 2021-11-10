@@ -1,6 +1,6 @@
 button {
 border: none;
-background-color: rgb(80, 60, 209);
+background-color: rgb(83, 81, 92);
 font-size: 24px;
 color: rgb(255, 255, 255);
 font-weight: bold;
@@ -10,7 +10,7 @@ outline: none;
 }
 
 button:hover {
-background-color: rgb(61, 43, 184);
+background-color: rgb(51, 48, 66);
 }
 
 .equals {
