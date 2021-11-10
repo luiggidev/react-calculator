@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.casio *{
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1em;
+
+
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "verdana", sans-serif;
+  font-family: "roboto", sans-serif;
 }
+
 
 body {
   height: 100vh;
