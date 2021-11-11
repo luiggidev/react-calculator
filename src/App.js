@@ -26,7 +26,24 @@ const App = () => {
     num: 0,
     res: 0,
   });
+
+  let [currentOperation, setOperation] = useState({
+    operation: false,
+  });
     
+  const setFlicker = () => {
+    setOperation({
+      ...currentOperation,
+      operation: !currentOperation.operation,
+    });
+    setTimeout(function () {
+      setOperation({
+        ...currentOperation,
+        operation: currentOperation.operation,
+      });
+    }, 100);
+  };
+  
   // numClickHandler function -The numClickHandler function gets triggered only if any of the number buttons (0–9) are pressed. 
   // Then it gets the value of the Button and adds that to the current num value.
   const numClickHandler = (e) => {
@@ -45,6 +62,8 @@ const App = () => {
         res: !calc.sign ? 0 : calc.res,
       });
     }
+
+    setFlicker();
   };
 
   // numClickHandler function - adds the decimal point to the current num value, making it a decimal number.
@@ -56,6 +75,8 @@ const App = () => {
       ...calc,
       num: !calc.num.toString().includes(".") ? calc.num + value : calc.num,
     });
+
+    setFlicker();
   };
 
   // commaClickHandler function - The signClickHandler function gets fired when the user press either +, –, * or /. 
@@ -70,6 +91,8 @@ const App = () => {
       res: !calc.res && calc.num ? calc.num : calc.res,
       num: 0,
     });
+
+    setFlicker();
   };
 
   // signClickHandler function - The equalsClickHandler function calculates the result when the equals button (=) is pressed. 
@@ -101,6 +124,8 @@ const App = () => {
         num: 0,
       });
     }
+
+    setFlicker();
   };
 
   // equalsClickHandler function
@@ -112,6 +137,8 @@ const App = () => {
       res: calc.res ? toLocaleString(removeSpaces(calc.res) * -1) : 0,
       sign: "",
     });
+
+    setFlicker();
   };
 
   // invertClickHandler function - The percentClickHandler function checks if there’s any entered value (num) or calculated value (res) and 
@@ -126,6 +153,8 @@ const App = () => {
       res: (res /= Math.pow(100, 1)),
       sign: "",
     });
+
+    setFlicker();
   };
 
   // percentClickHandler function - The resetClickHandler function defaults all the initial values of calc, returning 
@@ -137,7 +166,11 @@ const App = () => {
       num: 0,
       res: 0,
     });
+
+    setFlicker();
   };
+
+
 
   return (
     <Wrapper>
@@ -146,7 +179,7 @@ const App = () => {
         <p className="upper">ELETRONIC CALCULATOR</p>
         <p>HL-815L</p>
       </div>
-      <Screen value={calc.num ? calc.num : calc.res} />
+      <Screen flickState={ currentOperation.operation } value={calc.num ? calc.num : calc.res} />
       <ButtonBox>
         {
           // Flat() inserts all btn values inside a single array, map goes through them and returns a button with the required key, className, value and onClick properties
