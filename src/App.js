@@ -65,7 +65,7 @@ const App = () => {
     setFlicker();
   };
 
-  // numClickHandler function - adds the decimal point to the current num value, making it a decimal number.
+  // commaClickHandler function - adds the decimal point to the current num value, making it a decimal number.
   const commaClickHandler = (e) => {
     e.preventDefault();
     const value = e.target.innerHTML;
@@ -78,7 +78,7 @@ const App = () => {
     setFlicker();
   };
 
-  // commaClickHandler function - The signClickHandler function gets fired when the user press either +, –, * or /. 
+  // signClickHandler function - The signClickHandler function gets fired when the user press either +, –, * or /. 
   // The particular value is then set as a current sign value in the calc object.
   const signClickHandler = (e) => {
     e.preventDefault();
@@ -94,7 +94,7 @@ const App = () => {
     setFlicker();
   };
 
-  // signClickHandler function - The equalsClickHandler function calculates the result when the equals button (=) is pressed. 
+  // equalsClickHandler function - The equalsClickHandler function calculates the result when the equals button (=) is pressed. 
   // The calculation is based on the current num and res value, as well as the sign selected (see the math function).
   const equalsClickHandler = () => {
     if (calc.sign && calc.num) {
@@ -127,8 +127,8 @@ const App = () => {
     setFlicker();
   };
 
-  // equalsClickHandler function
-  // The invertClickHandler function first checks if there’s any entered value (num) or calculated value (res) and then inverts them by multiplying with -1:
+  // invertClickHandler function - The invertClickHandler function first checks if there’s any entered value (num)
+  // or calculated value (res) and then inverts them by multiplying with -1:
   const invertClickHandler = () => {
     setCalc({
       ...calc,
@@ -140,7 +140,7 @@ const App = () => {
     setFlicker();
   };
 
-  // invertClickHandler function - The percentClickHandler function checks if there’s any entered value (num) or calculated value (res) and 
+  // percentClickHandler function - The percentClickHandler function checks if there’s any entered value (num) or calculated value (res) and 
   // then calculates the percentage using the built-in Math.pow function, which returns the base to the exponent power:
   const percentClickHandler = () => {
     let num = calc.num ? parseFloat(removeSpaces(calc.num)) : 0;
@@ -156,7 +156,7 @@ const App = () => {
     setFlicker();
   };
 
-  // percentClickHandler function - The resetClickHandler function defaults all the initial values of calc, returning 
+  // resetClickHandler function - The resetClickHandler function defaults all the initial values of calc, returning 
   // the calc state as it was when the Calculator app was first rendered:
   const resetClickHandler = () => {
     setCalc({
@@ -168,7 +168,6 @@ const App = () => {
 
     setFlicker();
   };
-
 
 
   return (
