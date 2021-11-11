@@ -8,8 +8,12 @@ button {
     cursor: pointer;
     border-radius: 10px;
     outline: none;
-}
 
+	border-bottom: 5px solid #36343b;
+	border-top: 2.5px solid #65626e;
+	border-left: 2.5px solid #65626e;
+	border-right: 2.5px solid #65626e;
+}
 
 .casio {
     text-align: center;
@@ -47,11 +51,11 @@ button:hover {
 .minus:hover, 
 .decimal:hover, 
 .multiply:hover, 
-.slash:hover, 
+.divide:hover, 
 .percent:hover, 
 .plusminus:hover, 
 .reset:hover {
-    background-color: rgb(20, 16, 39)
+    background-color: #15141b;
 }
 
 .equals {
