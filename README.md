@@ -23,3 +23,5 @@ https://www.sitepoint.com/react-tutorial-build-calculator-app/
 - Added react-meta-tags.
 
 - Added the ridiculous Casio HL-815L knockoff styles.
+
+- Added flicker function using react states
