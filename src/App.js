@@ -14,9 +14,7 @@ const btnValues = [
   [0, ".", "="],
 ];
 
-const toLocaleString = (num) =>
-  String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, "$1 ");
-
+const toLocaleString = (num) => String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, "$1 ");
 const removeSpaces = (num) => num.toString().replace(/\s/g, "");
 
 const App = () => {
@@ -30,7 +28,8 @@ const App = () => {
   let [currentOperation, setOperation] = useState({
     operation: false,
   });
-    
+
+  // Sets calculator flicker animation 
   const setFlicker = () => {
     setOperation({
       ...currentOperation,
