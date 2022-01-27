@@ -1,0 +1,19 @@
+.casio *{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.casio {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding-bottom: 1rem;
+}
+.casio .upper{
+    font-size: 80%;
+}
+
+.casio h3 {
+    padding-bottom: .5rem;
+}

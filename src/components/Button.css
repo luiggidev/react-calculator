@@ -15,21 +15,6 @@ button {
 	border-right: 2.5px solid #65626e;
 }
 
-.casio {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    padding-bottom: 1rem;
-}
-.casio .upper{
-    font-size: 80%;
-}
-
-.casio h3 {
-    padding-bottom: .5rem;
-}
-
 button:hover {
     background-color: #5f5d68;
 }

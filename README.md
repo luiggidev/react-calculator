@@ -14,14 +14,14 @@ Calculate percentages, invert, reset.
 
 Textfit used to format larger numbers.
 
-Tutorial followed:
-
-https://www.sitepoint.com/react-tutorial-build-calculator-app/
-
+New Features added:
 - Added support for symbol classes.
 
 - Added react-meta-tags.
 
 - Added the ridiculous Casio HL-815L knockoff styles.
 
-- Added flicker function using react states
+- Added flicker effects
+
+Tutorial followed:
+https://www.sitepoint.com/react-tutorial-build-calculator-app/
