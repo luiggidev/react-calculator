@@ -11,6 +11,23 @@
     border-right: 5px solid #65626e;
   }
 
+  @media only screen and (max-width: 450px) {
+    body  {
+      background-color: #494455;
+    }
+    .wrapper  {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0; 
+      right: 0; 
+      bottom: 0; 
+      left: 0;
+      padding: 20px;
+      border: none;
+      border-radius: 0;
+    }
+  }
   .animate-flicker div {
     opacity:0;
   }
