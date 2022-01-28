@@ -26,5 +26,4 @@ New Features added:
 
 - Added setFlicker using React States.
 
-Course project:
-https://www.sitepoint.com/react-tutorial-build-calculator-app/
+[References](https://www.sitepoint.com/react-tutorial-build-calculator-app/)
