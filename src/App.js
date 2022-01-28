@@ -6,7 +6,7 @@ import Screen from "./components/Screen";
 import ButtonBox from "./components/ButtonBox";
 import Button from "./components/Button";
 
-const btnValues = [
+const buttonValues = [
   ["C", "+-", "%", "/"],
   [7, 8, 9, "X"],
   [4, 5, 6, "-"],
@@ -25,20 +25,18 @@ const App = () => {
     res: 0,
   });
 
-  let [currentOperation, setOperation] = useState({
-    operation: false,
+  let [flickState, setDisplay] = useState({
+    display: true,
   });
 
   // Sets calculator flicker animation 
   const setFlicker = () => {
-    setOperation({
-      ...currentOperation,
-      operation: !currentOperation.operation,
+    setDisplay({
+      display: false,
     });
     setTimeout(function () {
-      setOperation({
-        ...currentOperation,
-        operation: currentOperation.operation,
+      setDisplay({
+        display: true,
       });
     }, 100);
   };
@@ -173,11 +171,11 @@ const App = () => {
   return (
     <Wrapper>
       <Logo />
-      <Screen flickState={ currentOperation.operation } value={calc.num ? calc.num : calc.res} />
+      <Screen flickState={ flickState.display } value={calc.num ? calc.num : calc.res} />
       <ButtonBox>
         {
           // Flat() inserts all btn values inside a single array, map goes through them and returns a button with the required key, className, value and onClick properties
-          btnValues.flat().map((btn, i) => {
+          buttonValues.flat().map((btn, i) => {
             return (
               <Button
                 key={i}

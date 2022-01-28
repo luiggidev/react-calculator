@@ -21,7 +21,7 @@ New Features added:
 
 - Added the ridiculous Casio HL-815L knockoff styles.
 
-- Added flicker effects
+- Added setFlicker using React States.
 
 Tutorial followed:
 https://www.sitepoint.com/react-tutorial-build-calculator-app/
