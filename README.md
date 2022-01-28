@@ -1,4 +1,4 @@
-# React Calculator
+# React Casio Calculator
 
 ![image](https://user-images.githubusercontent.com/65421097/151467430-18d3ac57-7cbf-426b-86d3-7acae70a8bab.png)
 
