@@ -20,7 +20,7 @@ New Features added:
 
 - Added react-meta-tags.
 
-- Added the ridiculous Casio HL-815L knockoff styles.
+- Added the Casio HL-815L knockoff styles.
 
 - Added setFlicker using React States.
 
