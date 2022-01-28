@@ -16,6 +16,8 @@ Calculate percentages, invert, reset.
 Textfit component used to format larger numbers.
 
 New Features added:
+- Resposive to diferent types of screen.
+
 - Added support for symbol classes.
 
 - Added react-meta-tags.
@@ -24,5 +26,5 @@ New Features added:
 
 - Added setFlicker using React States.
 
-Tutorial followed:
+Course project:
 https://www.sitepoint.com/react-tutorial-build-calculator-app/
