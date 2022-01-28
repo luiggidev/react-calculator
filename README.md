@@ -13,7 +13,7 @@ Supports decimal values.
 
 Calculate percentages, invert, reset.
 
-Textfit used to format larger numbers.
+Textfit component used to format larger numbers.
 
 New Features added:
 - Added support for symbol classes.
