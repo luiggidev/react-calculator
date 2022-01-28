@@ -1,0 +1,25 @@
+.footer.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer div{
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1rem;
+    color: #1e1d24;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 450px) {
+    .footer div {
+        color: white;
+    }
+  }
+
+.footer div a:visited {
+    color: #8f8c9d;
+}
+
