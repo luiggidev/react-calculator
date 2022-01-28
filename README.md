@@ -1,6 +1,7 @@
 # React Calculator
 
-![image](https://user-images.githubusercontent.com/65421097/141231341-358e70f8-96cd-4d75-9bb3-8ad56588c69a.png)
+![image](https://user-images.githubusercontent.com/65421097/151467430-18d3ac57-7cbf-426b-86d3-7acae70a8bab.png)
+
 
 ## Complete React calculator.
 
